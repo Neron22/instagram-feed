@@ -1,18 +1,44 @@
 body {
   font-family: 'Permanent Marker', cursive;
+  height: 3200px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#bbe1f9), to(#def2ff));
+  background: linear-gradient(180deg, #bbe1f9 0%, #def2ff 100%);
+  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   background-color: #eff3f0;
-  scroll-behavior: smooth;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  overflow: auto;
+  -webkit-perspective: 1px;
+          perspective: 1px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+body, body * {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
 
 .insta-section {
   position: relative;
   margin: 0 80px;
+  height: 6200px;
 }
 
 .insta-section-h1 {
-  position: fixed;
-  z-index: -1;
+  padding-bottom: 200px;
+  position: -webkit-sticky;
+  position: sticky;
   top: 240px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -26,11 +52,11 @@ body {
 }
 
 .insta-section-h1 h1 {
-  font-size: 72px;
+  font-size: 60px;
   width: 47%;
   line-height: 72px;
   text-align: center;
-  color: #225732;
+  color: #093a3f;
 }
 
 .insta-feed {
@@ -39,7 +65,7 @@ body {
 
 .post {
   position: absolute;
-  width: 33%;
+  width: 45%;
 }
 
 .post img {
@@ -47,26 +73,338 @@ body {
 }
 
 .post1 {
-  top: 60px;
+  top: 20px;
+  position: relative;
+}
+
+.post1 :nth-child(2) {
+  position: absolute;
+  -webkit-transform: translateZ(0.5px) scale(0.5);
+          transform: translateZ(0.5px) scale(0.5);
+  z-index: 500;
+  top: 530px;
+  left: 460px;
+  width: 18%;
+}
+
+.post1 :nth-child(3) {
+  position: absolute;
+  -webkit-transform: translateZ(0.3px) scale(0.7);
+          transform: translateZ(0.3px) scale(0.7);
+  z-index: 300;
+  top: 260px;
+  left: 1200px;
+  width: 12%;
+}
+
+.post1 :nth-child(4) {
+  position: absolute;
+  -webkit-transform: translateZ(0.2px) scale(0.8);
+          transform: translateZ(0.2px) scale(0.8);
+  z-index: 200;
+  top: 630px;
+  left: 600px;
+  width: 3%;
 }
 
 .post2 {
-  right: 6%;
-  top: 50vh;
+  right: -50px;
+  top: 80vh;
+}
+
+.post2 :nth-child(2) {
+  position: absolute;
+  -webkit-transform: translateZ(0.6px) scale(0.4);
+          transform: translateZ(0.6px) scale(0.4);
+  z-index: 600;
+  top: 500px;
+  right: 370px;
+  width: 10%;
+}
+
+.post2 :nth-child(3) {
+  position: absolute;
+  -webkit-transform: translateZ(0.2px) scale(0.8);
+          transform: translateZ(0.2px) scale(0.8);
+  z-index: 200;
+  top: 300px;
+  right: 270px;
+  width: 3%;
+}
+
+.post2 :nth-child(4) {
+  position: absolute;
+  -webkit-transform: translateZ(0.2px) scale(0.8);
+          transform: translateZ(0.2px) scale(0.8);
+  z-index: 200;
+  top: 500px;
+  right: 570px;
+  width: 3%;
 }
 
 .post3 {
-  top: 110vh;
+  top: 160vh;
   left: 6%;
 }
 
+.post3 :nth-child(2) {
+  position: absolute;
+  -webkit-transform: translateZ(0.3px) scale(0.7);
+          transform: translateZ(0.3px) scale(0.7);
+  z-index: 300;
+  top: -80px;
+  left: 160px;
+  width: 10%;
+}
+
+.post3 :nth-child(3) {
+  position: absolute;
+  -webkit-transform: translateZ(0.4px) scale(0.6);
+          transform: translateZ(0.4px) scale(0.6);
+  z-index: 400;
+  top: 530px;
+  left: 1050px;
+  width: 10%;
+}
+
+.post3 :nth-child(4) {
+  position: absolute;
+  -webkit-transform: translateZ(0.2px) scale(0.8);
+          transform: translateZ(0.2px) scale(0.8);
+  z-index: 200;
+  top: 530px;
+  left: 80px;
+  width: 3%;
+}
+
+.post3 :nth-child(5) {
+  position: absolute;
+  -webkit-transform: translateZ(0.2px) scale(0.8);
+          transform: translateZ(0.2px) scale(0.8);
+  z-index: 200;
+  top: 230px;
+  left: 890px;
+  width: 3%;
+}
+
+.post3 :nth-child(6) {
+  position: absolute;
+  -webkit-transform: translateZ(0.2px) scale(0.8);
+          transform: translateZ(0.2px) scale(0.8);
+  z-index: 200;
+  top: 530px;
+  left: 700px;
+  width: 3%;
+}
+
 .post4 {
-  top: 200vh;
-  right: 10%;
+  top: 310vh;
+  right: 0px;
+}
+
+.post4 :nth-child(2) {
+  position: absolute;
+  -webkit-transform: translateZ(0.2px) scale(0.8);
+          transform: translateZ(0.2px) scale(0.8);
+  z-index: 200;
+  top: -80px;
+  right: 160px;
+  width: 10%;
+}
+
+.post4 :nth-child(3) {
+  position: absolute;
+  -webkit-transform: translateZ(0.4px) scale(0.6);
+          transform: translateZ(0.4px) scale(0.6);
+  z-index: 400;
+  top: 80px;
+  right: 1030px;
+  width: 10%;
+}
+
+.post4 :nth-child(4) {
+  position: absolute;
+  -webkit-transform: translateZ(0.2px) scale(0.8);
+          transform: translateZ(0.2px) scale(0.8);
+  z-index: 200;
+  top: 80px;
+  right: 700px;
+  width: 3%;
 }
 
 .post5 {
-  top: 260vh;
-  left: 10%;
+  top: 400vh;
+  left: 1%;
+}
+
+.post5 :nth-child(2) {
+  position: absolute;
+  -webkit-transform: translateZ(0.5px) scale(0.5);
+          transform: translateZ(0.5px) scale(0.5);
+  z-index: 500;
+  top: 330px;
+  left: 160px;
+  width: 15%;
+}
+
+.post5 :nth-child(3) {
+  position: absolute;
+  -webkit-transform: translateZ(0.3px) scale(0.7);
+          transform: translateZ(0.3px) scale(0.7);
+  z-index: 300;
+  top: 430px;
+  left: 1020px;
+  width: 12%;
+}
+
+.post5 :nth-child(4) {
+  position: absolute;
+  -webkit-transform: translateZ(0.2px) scale(0.8);
+          transform: translateZ(0.2px) scale(0.8);
+  z-index: 200;
+  top: 230px;
+  left: 460px;
+  width: 4%;
+}
+
+.post5 :nth-child(5) {
+  position: absolute;
+  -webkit-transform: translateZ(0.2px) scale(0.8);
+          transform: translateZ(0.2px) scale(0.8);
+  z-index: 200;
+  top: 50px;
+  left: 960px;
+  width: 4%;
+}
+
+.post5 :nth-child(6) {
+  position: absolute;
+  -webkit-transform: translateZ(-0.2px) scale(1.2);
+          transform: translateZ(-0.2px) scale(1.2);
+  z-index: -200;
+  top: 470px;
+  left: 100px;
+  width: 3%;
+}
+
+.post5 :nth-child(7) {
+  position: absolute;
+  -webkit-transform: translateZ(0.2px) scale(0.8);
+          transform: translateZ(0.2px) scale(0.8);
+  z-index: 200;
+  top: 530px;
+  left: 700px;
+  width: 3%;
+}
+
+.section-reservation {
+  height: 200px;
+  background-color: #093a3f;
+}
+
+.section-reservation h2 {
+  font-size: 140px;
+  color: white;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.section-chef {
+  margin-top: 160px;
+  padding: 24px 120px;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-chef img {
+  width: 60%;
+}
+
+.section-chef h3 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+}
+
+.section-chef p {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+}
+
+header {
+  z-index: 1000;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 12px 48px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #093a3f;
+}
+
+.logo {
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.menu {
+  -webkit-box-flex: 0.2;
+      -ms-flex-positive: 0.2;
+          flex-grow: 0.2;
+}
+
+.menu ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+}
+
+.menu ul li {
+  list-style-type: none;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 3px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.cta {
+  padding: 6px 12px;
+  border: 2px solid #093a3f;
+}
+
+.cta p {
+  margin: 0px;
 }
 /*# sourceMappingURL=style.css.map */
