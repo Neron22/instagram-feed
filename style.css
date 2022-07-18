@@ -52,7 +52,7 @@ body, body * {
 }
 
 .insta-section-h1 h1 {
-  font-size: 60px;
+  font-size: 80px;
   width: 47%;
   line-height: 72px;
   text-align: center;
@@ -70,6 +70,12 @@ body, body * {
 
 .post img {
   max-width: 100%;
+}
+
+.post1 :nth-child(1), .post2 :nth-child(1), .post3 :nth-child(1), .post4 :nth-child(1), .post5 :nth-child(1) {
+  -webkit-box-shadow: 5px 4px 15px 2px #80808040;
+          box-shadow: 5px 4px 15px 2px #80808040;
+  border-radius: 3px;
 }
 
 .post1 {
@@ -93,7 +99,7 @@ body, body * {
           transform: translateZ(0.3px) scale(0.7);
   z-index: 300;
   top: 260px;
-  left: 1200px;
+  left: 1000px;
   width: 12%;
 }
 
@@ -118,7 +124,7 @@ body, body * {
           transform: translateZ(0.6px) scale(0.4);
   z-index: 600;
   top: 500px;
-  right: 370px;
+  right: 600px;
   width: 10%;
 }
 
