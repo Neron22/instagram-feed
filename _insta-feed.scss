@@ -5,6 +5,9 @@ $parallax-perspective : 1 !default;
 $parallax-element     : "body" !default;
 $parallax-ios         : true !default;
 
+// création de la mixin parallax-init
+// Une mixin est un morceau de code paramétrable et réutilisable n’importe où dans votre fichier SASS.
+
 @mixin parallax-init(
   $perspective  : $parallax-perspective,
   $element      : $parallax-element,
